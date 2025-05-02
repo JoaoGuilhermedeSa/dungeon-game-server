@@ -1,10 +1,10 @@
 package com.example.plugin
 
-import io.ktor.server.routing.*
-import io.ktor.http.*
-import io.ktor.server.application.*
-import io.ktor.server.response.*
-import io.ktor.server.request.*
+import io.ktor.server.application.Application
+import io.ktor.server.routing.get
+import io.ktor.server.routing.routing
+import io.ktor.server.response.respond
+import com.example.model.GameResponse
 import com.example.service.GameService
 
 fun Application.configureRouting() {
